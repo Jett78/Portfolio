@@ -1,36 +1,41 @@
+"use client";
 import React from 'react'
 import { FaFacebook } from "react-icons/fa";
 import { FaGithub } from "react-icons/fa6";
 import { FaLinkedin } from "react-icons/fa";
 import { FaInstagram } from "react-icons/fa";
+import { TypeAnimation } from 'react-type-animation';
 
 
 
 const HeroSection = () => {
   return (
     <main>
-      <div className='flex flex-wrap justify-center items-center lg:gap-40 gap-8 lg:p-20 p-10'>
-
+      <div className='flex xl:flex-wrap flex-wrap-reverse justify-around items-center xl:gap-60 gap-8 p-4 min-h-screen bg-gray-900'>
         <section>
-          <h2 className='lg:text-3xl md:text-3xl text-xl font-semibold text-gray-200'>Hello It's Me</h2>
-          <h2 className='lg:text-5xl md:text-4xl text-3xl font-semibold'>Jeet Deula</h2>
-          <h2 className='lg:text-3xl md:text-3xl text-2xl font-semibold'>And I'm a <span className='text-red-500 lg:text-4xl md:text-4xl text-3xl font-bold'>Web Developer</span></h2>
+          <h2 className='xl:text-5xl md:text-4xl text-xl font-semibold text-purple-600'>Hello, It's Me</h2>
+          <h2 className='xl:text-7xl md:text-5xl text-3xl font-semibold'>Jeet Deula</h2>
+          <h2 className='xl:text-5xl md:text-4xl text-2xl font-semibold'>And I'm <span className='text-red-500 xl:text-6xl md:text-4xl text-2xl font-bold '>Web Developer</span></h2>
           <p className='max-w-[35rem] my-3 text-gray-300'>I'm a frontend developer eager to make a mark in the industry with years of experience throughout my journey</p>
-          <div className='flex gap-3 text-3xl md:my-2 my-4 '>
-            <FaFacebook/>
-            <FaInstagram/>
-            <FaGithub/>
-            <FaLinkedin/>
+          
+          <div className='flex gap-3 text-3xl md:my-2 my-4 cursor-pointer '>
+            <FaFacebook className=' text-blue-500 hover:text-4xl ease-in duration-300'/>
+            <FaInstagram className='text-red-400 hover:text-4xl ease-in duration-300'/>
+            <FaGithub className='hover:text-4xl ease-in duration-300'/>
+            <FaLinkedin className='text-blue-500 bg-white rounded-full p-0.5 hover:text-4xl ease-in-out duration-300'/>
           </div>
-          <div className='flex gap-4'>
-            <button className='border-2 h-10 w-40 rounded-2xl'>Download CV</button>
-            <button className='bg-red-600 h-10 w-20 rounded-2xl'>Hire Me</button>
+          
+          <div className='flex gap-4 justify-center'>
+            <button className='border-2 border-lime-500 h-10 w-40 rounded-2xl'>Download CV</button>
+            <button className='bg-red-600 h-10 w-20 rounded-2xl '>Hire Me</button>
           </div>
+        
         </section>
-        <section>
-          <img src="./avatar.png" alt="avatar" className='max-h-[23rem] rounded-full' />
+        <section className=' shadow-2xl shadow-lime-200  bg-lime-300 p-3 rounded-full '>
+          <img src="./avatar.png" alt="avatar" className='max-h-[25rem] rounded-full  ' />
         </section>
-      </div>
+     
+     </div>
     </main>
   )
 }
