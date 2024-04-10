@@ -15,7 +15,7 @@ const About = () => {
         <section>
           <h2 className="text-3xl font-semibold">About me</h2>
           <p className="max-w-[40rem] text-gray-300 lg:pt-10 pt-4">
-            Hello there! I'm Jeet Deula, a passionate frontend developer from
+            Hello there! I'm Jeet Deula,a passionate frontend developer from
             kathmandu,Nepal. With a keen eye for creating visually stunning and
             user-friendly websites. My journey in the world of web development
             began since 2022, and since then, I've been on a mission to bring

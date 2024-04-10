@@ -9,11 +9,14 @@ import { FaInstagram } from "react-icons/fa";
 const HeroSection = () => {
   return (
     <main>
-      <div className='flex flex-wrap justify-center items-center lg:gap-40 gap-8 lg:p-20 p-10 min-h-screen'>
+      <div className='flex flex-wrap justify-center items-center lg:gap-40 gap-8 lg:p-20 p-10'>
+
         <section>
-          <h2 className='lg:text-7xl md:text-5xl text-2xl font-semibold'>Hello I'm</h2>
-          <h2 className='lg:text-7xl md:text-6xl text-3xl font-bold text-red-500'>Frontend Developer</h2>
-          <div className='flex gap-3 text-3xl md:my-6 my-4 '>
+          <h2 className='lg:text-3xl md:text-3xl text-xl font-semibold text-gray-200'>Hello It's Me</h2>
+          <h2 className='lg:text-5xl md:text-4xl text-3xl font-semibold'>Jeet Deula</h2>
+          <h2 className='lg:text-3xl md:text-3xl text-2xl font-semibold'>And I'm a <span className='text-red-500 lg:text-4xl md:text-4xl text-3xl font-bold'>Web Developer</span></h2>
+          <p className='max-w-[35rem] my-3 text-gray-300'>I'm a frontend developer eager to make a mark in the industry with years of experience throughout my journey</p>
+          <div className='flex gap-3 text-3xl md:my-2 my-4 '>
             <FaFacebook/>
             <FaInstagram/>
             <FaGithub/>
