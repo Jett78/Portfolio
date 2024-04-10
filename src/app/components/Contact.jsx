@@ -8,7 +8,7 @@ const Contact = () => {
   return (
     <main>
       <div className="flex flex-wrap xl:justify-between justify-center mx-8 mt-5">
-        <section className="max-w-[30rem]">
+        <section className="max-w-[35rem]">
           <h2 className="font-bold text-2xl mb-5">Let's Connect</h2>
           <p className=" text-gray-400">
             I'm currently looking for new opportunities,my inbox is always

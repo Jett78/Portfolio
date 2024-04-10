@@ -11,7 +11,7 @@ import { TypeAnimation } from 'react-type-animation';
 const HeroSection = () => {
   return (
     <main>
-      <div className='flex xl:flex-wrap flex-wrap-reverse justify-around items-center xl:gap-60 gap-8 p-4 min-h-screen bg-gray-900'>
+      <div className='flex xl:flex-wrap flex-wrap-reverse justify-center  items-center xl:gap-60 gap-8 p-4 min-h-screen bg-gray-900'>
         <section>
           <h2 className='xl:text-5xl md:text-4xl text-xl font-semibold text-purple-600'>Hello, It's Me</h2>
           <h2 className='xl:text-7xl md:text-5xl text-3xl font-semibold'>Jeet Deula</h2>

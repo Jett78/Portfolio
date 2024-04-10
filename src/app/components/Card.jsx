@@ -5,9 +5,9 @@ import { FaEye } from "react-icons/fa";
 const Card = ({ project }) => {
   return (
     <main>
-      <section className=" bg-neutral-900 grid justify-center text-left w-[25rem]">
+      <section className=" bg-neutral-900 grid justify-center text-left max-w-[60rem] mx-2 ">
         <div>
-          <img src="./avatar.png" alt="card" className="max-h-80 min-w-[25rem] rounded-lg " />
+          <img src="./avatar.png" alt="card" className="max-h-80 w-[25rem] rounded-lg " />
         </div>
 
         <div className="py-1 px-4">
