@@ -3,13 +3,22 @@ import Card from "./Card";
 
 const projectdata = [
     {
-        name:"Library Management System",  
+        name:"Music School Webpage",  
+        img:"./music.png",
+        gitUrl:"https://github.com/Jett78/musicnextjs",
+        preview:"https://musicnextjs-eight.vercel.app/",
     },
     {
         name:"Ecommerce-App",  
+        img:"./ecom.png",
+        gitUrl:"https://github.com/Jett78/Ecommerce",
+        preview:"https://ecommerce-liard-nu-20.vercel.app/",
     },
     {
         name:"Recipe Search Hub",  
+        img:"./recipe.png",
+        gitUrl:"https://github.com/Jett78/Recipe_App",
+        preview:"https://recipehubs.netlify.app/",
     },
 ]
 const Projects = () => {
