@@ -31,8 +31,8 @@ const HeroSection = () => {
           </div>
         
         </section>
-        <section className=' shadow-2xl shadow-lime-200  bg-lime-300 p-3 rounded-full '>
-          <img src="./avatar.png" alt="avatar" className='max-h-[25rem] rounded-full  ' />
+        <section className=' shadow-2xl shadow-purple-500  bg-purple-500 p-3 rounded-full '>
+          <img src="./profile.jpg" alt="avatar" className='sm:max-w-[22rem] rounded-[500px]  ' />
         </section>
      
      </div>
