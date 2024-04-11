@@ -32,7 +32,7 @@ const HeroSection = () => {
         
         </section>
         <section className=' shadow-2xl shadow-purple-500  bg-purple-500 p-3 rounded-full '>
-          <img src="./profile.jpg" alt="avatar" className='sm:max-w-[22rem] rounded-[500px]  ' />
+          <img src="./profile.jpg" alt="avatar" className='sm:max-w-[22rem] w-[15rem] rounded-[500px]  ' />
         </section>
      
      </div>
