@@ -13,7 +13,7 @@ const Skills = () => {
     }
   return (
    <main>
-    <div className='sm:max-w-[40rem] w-[25rem] mt-10'>
+    <div className='sm:max-w-[40rem] w-[20rem] mt-10'>
         <h2 className='text-left text-2xl font-bold py-4'>Skills</h2>
         <div className='flex gap-6'>
             {SKILLS.map((item) => (
