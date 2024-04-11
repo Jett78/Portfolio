@@ -26,11 +26,11 @@ const Contact = () => {
         <section className="grid w-[40rem] p-2">
             <form action="#" className="">
                 <label htmlFor="email">Your Email</label><br />
-                <input type="email" placeholder="ram@gmail.com" className="bg-black border border-green-500 p-2 mb-5 w-full"/><br />
+                <input type="email" placeholder="ram@gmail.com" className="bg-black border border-green-500 p-2 mb-5 w-full rounded-xl"/><br />
                 <label htmlFor="subject">Subject</label><br />
-                <input type="text" placeholder="Just saying Hi" className="bg-black border border-green-500 p-2 mb-5 w-full" /><br />
+                <input type="text" placeholder="Just saying Hi" className="bg-black border border-green-500 p-2 mb-5 w-full rounded-xl" /><br />
                 <label htmlFor="message">Message</label><br />
-                <textarea name="message" id="" cols="30" rows="10" placeholder="Let's talk about" className="bg-black border border-green-500 p-2 mb-5 w-full"></textarea><br />
+                <textarea name="message" id="" cols="30" rows="10" placeholder="Let's talk about" className="bg-black border border-green-500 p-2 mb-5 w-full rounded-xl"></textarea><br />
                 <button type="submit" className="bg-purple-600 w-full py-2 rounded-lg font-semibold">Send Message</button>
             </form>
         </section>
