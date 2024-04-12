@@ -4,7 +4,7 @@ import { FaFacebook } from "react-icons/fa";
 import { FaGithub } from "react-icons/fa6";
 import { FaLinkedin } from "react-icons/fa";
 import { FaInstagram } from "react-icons/fa";
-import { TypeAnimation } from 'react-type-animation';
+import Link from "next/link";
 
 
 
@@ -19,10 +19,10 @@ const HeroSection = () => {
           <p className='max-w-[35rem] my-3 text-gray-300'>I'm a frontend developer eager to make a mark in the industry with years of experience throughout my journey</p>
           
           <div className='flex gap-3 text-3xl md:my-2 my-4 cursor-pointer '>
-            <FaFacebook className=' text-blue-500 hover:text-4xl ease-in duration-300'/>
-            <FaInstagram className='text-red-400 hover:text-4xl ease-in duration-300'/>
-            <FaGithub className='hover:text-4xl ease-in duration-300'/>
-            <FaLinkedin className='text-blue-500 bg-white rounded-full p-0.5 hover:text-4xl ease-in-out duration-300'/>
+            <Link href ={"https://www.facebook.com/profile.php?id=100005027238835"} ><FaFacebook className=' text-blue-500 hover:text-4xl ease-in duration-300'/></Link>
+            <Link href={"https://www.instagram.com/_jettt__/"}><FaInstagram className='text-red-400 hover:text-4xl ease-in duration-300'/></Link>
+            <Link href={"https://github.com/Jett78"}><FaGithub className='hover:text-4xl ease-in duration-300'/></Link>
+            <Link href={"https://www.linkedin.com/in/jeet-deula-32642624a/"}> <FaLinkedin className='text-blue-500 bg-white rounded-full p-0.5 hover:text-4xl ease-in-out duration-300'/></Link>
           </div>
           
           <div className='flex gap-4 justify-center'>
