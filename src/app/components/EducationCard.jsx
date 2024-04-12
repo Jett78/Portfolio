@@ -6,7 +6,7 @@ const EducationCard = ({ info }) => {
   const { date, name, college } = info;
   return (
     <main>
-      <div className="flex sm:gap-6 gap-3 mt-4">
+      <div className="flex sm:gap-6 gap-3 mt-4 ">
         <SiGooglescholar className="sm:text-4xl text-3xl text-yellow-200"/>
         <div className="pb-10">
             <p className=" font-semibold text-gray-500">{date}</p>

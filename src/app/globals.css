@@ -3,7 +3,21 @@
 @tailwind utilities;
 
 
+@keyframes pulse {
+  0% {
+      border-color: rgb(2, 255, 171);
+  }
+  50% {
+      border-color: rgb(255, 2, 2);
+  }
+  100% {
+      border-color: rgb(252, 195, 6);
+  }
+}
 
+.animate-pulse {
+  animation: pulse 2s infinite;
+}
 @keyframes bounce {
   0%, 100% {
     transform: translateY(-5%);

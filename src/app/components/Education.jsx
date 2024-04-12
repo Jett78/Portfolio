@@ -20,8 +20,8 @@ const Education = () => {
   return (
     <main>
       <div>
-        <h2 className="text-left text-2xl font-bold py-4">Education</h2>
-        <div className=" border-2 py-2 sm:px-10 px-4 max-w-[40rem] max-h-[26rem] rounded-xl ">
+        <h2 className="text-left text-2xl font-bold py-4  ">Education</h2>
+        <div className=" border-2 py-2 sm:px-10 px-4 max-w-[40rem] max-h-[26rem] rounded-xl bg-gradient-to-l from-gray-800 ">
           {info.map((info,index) => (
             <EducationCard key={index} info={info}/>
           ))}

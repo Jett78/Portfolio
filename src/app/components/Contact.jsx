@@ -7,7 +7,7 @@ import { FaInstagram } from "react-icons/fa";
 const Contact = () => {
   return (
     <main>
-      <div className="flex flex-wrap justify-center p-4 mt-5 bg-gradient-to-r from-blue-800  ">
+      <div className="flex flex-wrap justify-center p-4 mt-10 ">
         <section className="max-w-[35rem]">
           <h2 className="font-bold text-2xl mb-5">Let's Connect</h2>
           <p className=" text-gray-400">
