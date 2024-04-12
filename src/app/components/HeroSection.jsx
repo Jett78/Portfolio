@@ -10,12 +10,12 @@ import { TypeAnimation } from 'react-type-animation';
 
 const HeroSection = () => {
   return (
-    <main>
-      <div className='flex xl:flex-wrap flex-wrap-reverse justify-center  items-center xl:gap-60 sm:gap-8 gap-2 p-4 min-h-screen bg-gray-900'>
+    <main >
+      <div className='flex xl:flex-wrap flex-wrap-reverse justify-center  items-center xl:gap-60 sm:gap-8 gap-2 p-4 min-h-screen bg-gray-900 '>
         <section>
           <h2 className='xl:text-5xl md:text-4xl text-xl font-semibold text-purple-600'>Hello, It's Me</h2>
           <h2 className='xl:text-7xl md:text-5xl text-3xl font-semibold'>Jeet Deula</h2>
-          <h2 className='xl:text-5xl md:text-4xl text-2xl font-semibold'>And I'm <span className='text-red-500 xl:text-6xl md:text-4xl text-2xl font-bold animate-pulse '>Web Developer</span></h2>
+          <h2 className='xl:text-5xl md:text-4xl text-2xl font-semibold'>And I'm <span className='text-red-500 xl:text-6xl md:text-4xl text-2xl font-bold animate-pulse'>Web Developer</span></h2>
           <p className='max-w-[35rem] my-3 text-gray-300'>I'm a frontend developer eager to make a mark in the industry with years of experience throughout my journey</p>
           
           <div className='flex gap-3 text-3xl md:my-2 my-4 cursor-pointer '>
@@ -31,7 +31,7 @@ const HeroSection = () => {
           </div>
         
         </section>
-        <section className=' shadow-2xl shadow-purple-500  bg-purple-500 p-3 rounded-full '>
+        <section className=' shadow-2xl shadow-purple-500  bg-purple-500 p-3 rounded-full animated-element '>
           <img src="./profile.jpg" alt="avatar" className='sm:max-w-[22rem] max-w-[15rem] rounded-[500px]  ' />
         </section>
      

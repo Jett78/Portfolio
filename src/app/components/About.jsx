@@ -3,7 +3,7 @@ import React from "react";
 const About = () => {
   return (
     <main>
-      <div className="flex flex-wrap items-center justify-center px-2 lg:gap-40 gap-6 mt-5">
+      <div className="flex flex-wrap items-center justify-center px-2 lg:gap-40 gap-6 my-6">
         <section>
           <img
             src="./avatar.png"

@@ -27,7 +27,7 @@ const Projects = () => {
       <div className="text-center mt-5 grid justify-center">
         <h2 className="text-3xl font-semibold text-gray-300">My Projects</h2>
         <p className="text-gray-400 mb-10">List of completed projects</p>
-        <div className="flex flex-wrap justify-center gap-20">
+        <div className="flex flex-wrap justify-center gap-20 animate-slidein">
                {projectdata.map((project,index) => (
                 <Card key={index} project={project}/>
                ))}
