@@ -2,7 +2,7 @@ import React from 'react'
 
 const SkillsInfocard = ({heading,skills}) => {
   return (
-    <div className="mt-5 border-2 bg-gradient-to-l  from-purple-900 rounded-xl max-w-[40em]">
+    <div className="mt-5 border bg-gradient-to-l  from-purple-900 rounded-xl max-w-[40em]">
         <h2 className='text-2xl font-semibold text-center py-2'>{heading}</h2> <hr />
         <div className='py-6 px-4'>
            {skills.map((item,index) => (

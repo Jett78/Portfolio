@@ -7,9 +7,9 @@ const Card = ({ project }) => {
   const { name, img, gitUrl, preview } = project;
   return (
     <main>
-      <section className=" bg-neutral-900 rounded-lg grid justify-center text-left max-w-[60rem] mx-2 ">
+      <section className=" bg-neutral-900 rounded-lg grid justify-center text-left max-w-[60rem] mx-2  ">
         <div>
-          <Link href={preview}><img src={img} alt="card" className="w-80 h-60 rounded-lg hover:brightness-50 ease-in-out duration-300 cursor-pointer " /></Link>
+          <Link href={preview}><img src={img} alt="card" className="w-80 h-[15rem] rounded-lg hover:brightness-50  ease-in-out duration-300 cursor-pointer " /></Link>
         </div>
 
         <div className="py-2 px-4">

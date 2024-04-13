@@ -3,18 +3,18 @@ import React from "react";
 const About = () => {
   return (
     <main>
-      <div className="flex flex-wrap items-center justify-center px-2 lg:gap-40 gap-6 my-6">
+      <div className="flex flex-wrap items-center justify-center px-2 lg:gap-40 gap-6 my-10  p-2 mx-2">
         <section>
           <img
             src="./avatar.png"
             alt="avatar"
-            className="h-[25rem] rounded-md xl:block hidden"
+            className="h-[26rem] rounded-full xl:block hidden border-4 shadow-2xl shadow-purple-500 animate-pulse"
           />
         </section>
 
         <section>
-          <h2 className="text-3xl font-semibold text-center">About me</h2>
-          <p className="max-w-[40rem] text-gray-400 lg:pt-6 pt-4 md:text-xl text-l">
+          <h2 className="text-3xl font-semibold text-center">About <span className="text-purple-500">me</span> </h2>
+          <p className="max-w-[40rem] text-gray-500 lg:pt-6 pt-4 md:text-xl text-l ">
             Hello there! I'm Jeet Deula,a passionate frontend developer from
             kathmandu,Nepal. With a keen eye for creating visually stunning and
             user-friendly websites. My journey in the world of web development
