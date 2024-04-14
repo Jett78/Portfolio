@@ -32,7 +32,7 @@ const Navbar = () => {
         <nav className="list-none font-semibold text-gray-200">
           <ul className="sm:flex hidden items-center gap-10 ">
          {navdata.map((navdata,index) => (
-            <Link key={index} href={navdata.path} className="hover:text-red-500">{navdata.name}</Link>
+            <Link key={index} href={navdata.path} className="hover:text-red-500 ">{navdata.name}</Link>
           ))}
           </ul>
           <GiHamburgerMenu className="sm:hidden block"  onClick={() => setIsOpen(!isOpen)} />
@@ -42,7 +42,7 @@ const Navbar = () => {
 
        {/* mobile view */}
        <div>
-       <ul className={`absolute grid gap-4 justify-center text-center bg-black w-full z-10  ${isOpen ? "block" : "hidden"}`} >
+       <ul className={`absolute grid gap-4 justify-center text-center p-2 font-semibold bg-black w-full z-10 sm:hidden ${isOpen ? "block" : "hidden"}`} >
          {navdata.map((navdata,index) => (
             <Link key={index} href={navdata.path} className="hover:text-red-500">{navdata.name}</Link>
           ))}

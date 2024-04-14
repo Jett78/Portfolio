@@ -26,13 +26,13 @@ const HeroSection = () => {
           </div>
           
           <div className='flex gap-4 justify-center'>
-            <button className='border-2 border-lime-500 h-10 w-40 rounded-2xl'>Download CV</button>
+           <a href="./JEETresume.pdf" download> <button className='border-2 border-lime-500 h-10 w-40 rounded-2xl'>Download CV</button></a>
            <Link href={"#contact"}> <button className='bg-red-600 h-10 w-20 rounded-2xl '>Hire Me</button></Link>
           </div>
         
         </section>
         <section className=' shadow-2xl shadow-purple-500  bg-purple-500 p-3 rounded-full animated-element '>
-          <img src="./profile.jpg" alt="avatar" className='sm:max-w-[22rem] max-w-[15rem] rounded-[500px]  ' />
+          <img src="./profile.jpg" alt="avatar" className='sm:max-w-[22rem] max-w-[15rem] rounded-full ' />
         </section>
      
      </div>

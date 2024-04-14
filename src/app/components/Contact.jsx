@@ -6,6 +6,7 @@ import { FaInstagram } from "react-icons/fa";
 import Link from "next/link";
 
 const Contact = () => {
+
   return (
     <main>
       <div className="flex flex-wrap justify-center p-4 mt-10 bg-gray-900 " id="contact">
@@ -25,13 +26,13 @@ const Contact = () => {
         </section>
 
         <section className="grid w-[40rem] p-2">
-            <form action="#" className="">
+            <form action="https://formspree.io/f/xyyrbvyv" method="post">
                 <label htmlFor="email">Your Email</label><br />
-                <input type="email" placeholder="ram@gmail.com" className="bg-black border border-gray-500 p-3 mb-5 w-full rounded-xl"/><br />
+                <input type="email" name="email" placeholder="ram@gmail.com" className="bg-black border border-gray-500 p-3 mb-5 w-full rounded-xl" required/><br />
                 <label htmlFor="subject">Subject</label><br />
-                <input type="text" placeholder="Just saying Hi" className="bg-black border border-gray-500 p-3 mb-5 w-full rounded-xl" /><br />
+                <input type="text" name="subject" placeholder="Just saying Hi" className="bg-black border border-gray-500 p-3 mb-5 w-full rounded-xl" required /><br />
                 <label htmlFor="message">Message</label><br />
-                <textarea name="message" id="" cols="30" rows="10" placeholder="Let's talk about" className="bg-black border border-gray-500 p-4 mb-5 w-full rounded-xl"></textarea><br />
+                <textarea name="message" id="" cols="30" rows="10" placeholder="Let's talk about" className="bg-black border border-gray-500 p-4 mb-5 w-full rounded-xl" required></textarea><br />
                 <button type="submit" className="bg-purple-600 w-full py-2 rounded-lg font-semibold">Send Message</button>
             </form>
         </section>
