@@ -3,7 +3,7 @@ import React from "react";
 const About = () => {
   return (
     <main>
-      <div className="flex flex-wrap items-center justify-center px-2 lg:gap-40 gap-6 my-10 p-2 mx-2 " id="about">
+      <div className="flex flex-wrap items-center justify-center px-2 lg:gap-40 gap-6 sm:my-10 p-2 mx-2 " id="about">
         <section>
           <img
             src="./avatar.png"
@@ -13,7 +13,7 @@ const About = () => {
         </section>
 
         <section>
-          <h2 className="text-3xl font-semibold text-center">About <span className="text-purple-500">me</span> </h2>
+          <h2 className="text-3xl font-semibold text-center  ">About <span className="text-purple-500">me</span> </h2>
           <p className="max-w-[40rem] text-gray-500 lg:pt-6 pt-4 text-l ">
             Hello there! I'm Jeet Deula,a passionate frontend developer from
             kathmandu,Nepal. With a keen eye for creating visually stunning and
