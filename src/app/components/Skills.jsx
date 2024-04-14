@@ -14,7 +14,7 @@ const Skills = () => {
     }
 
   return (
-   <main className=' flex flex-wrap justify-center lg:gap-20 border  border-gray-500  rounded-xl mt-10 sm:p-5 p-2 sm:mx-20 mx-2 '>
+   <main className=' flex flex-wrap justify-center lg:gap-20 border  border-gray-500  rounded-xl mt-2 sm:p-5 p-2 sm:mx-20 mx-2 '>
     <section className='w-[40rem]'>
         <h2 className='text-left text-2xl font-bold py-4 '>Skills</h2>
         <div className='flex gap-6'>
