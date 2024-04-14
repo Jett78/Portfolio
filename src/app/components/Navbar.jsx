@@ -1,4 +1,5 @@
-import React from "react";
+"use client";
+import React, { useState } from "react";
 import { GiHamburgerMenu } from "react-icons/gi";
 import Link from "next/link";
 
@@ -22,6 +23,8 @@ const navdata = [
 ]
 
 const Navbar = () => {
+
+  const[isOpen,setIsOpen] = useState(false);
   return (
     <main>
       <div className="border-b-2 flex justify-between items-center px-10 py-4 ">
@@ -32,9 +35,19 @@ const Navbar = () => {
             <Link key={index} href={navdata.path} className="hover:text-red-500">{navdata.name}</Link>
           ))}
           </ul>
-          <GiHamburgerMenu className="sm:hidden block" />
+          <GiHamburgerMenu className="sm:hidden block"  onClick={() => setIsOpen(!isOpen)} />
         </nav>
       </div>
+       
+
+       {/* mobile view */}
+       <div>
+       <ul className={`absolute grid gap-4 justify-center text-center bg-black w-full z-10  ${isOpen ? "block" : "hidden"}`} >
+         {navdata.map((navdata,index) => (
+            <Link key={index} href={navdata.path} className="hover:text-red-500">{navdata.name}</Link>
+          ))}
+          </ul>
+       </div>
     </main>
   );
 };
