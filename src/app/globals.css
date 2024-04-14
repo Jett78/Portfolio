@@ -20,7 +20,7 @@
 }
 @keyframes bounce {
   0%, 100% {
-    transform: translateY(-8%);
+    transform: translateY(-7%);
     animation-timing-function: cubic-bezier(0.8, 0, 1, 1);
   }
   50% {
