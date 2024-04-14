@@ -11,7 +11,7 @@ import Link from "next/link";
 const HeroSection = () => {
   return (
     <main >
-      <div className='flex xl:flex-wrap flex-wrap-reverse justify-center  items-center xl:gap-60 sm:gap-8 gap-2 p-4 min-h-screen bg-gray-900'>
+      <div className='flex xl:flex-wrap flex-wrap-reverse justify-center  items-center xl:gap-60 sm:gap-8 gap-2 p-4 min-h-[90vh] bg-gray-900'>
         <section>
           <h2 className='xl:text-5xl md:text-4xl text-xl font-semibold text-purple-600'>Hello, It's Me</h2>
           <h2 className='xl:text-7xl md:text-5xl text-3xl font-semibold'>Jeet Deula</h2>
@@ -27,7 +27,7 @@ const HeroSection = () => {
           
           <div className='flex gap-4 justify-center'>
             <button className='border-2 border-lime-500 h-10 w-40 rounded-2xl'>Download CV</button>
-            <button className='bg-red-600 h-10 w-20 rounded-2xl '>Hire Me</button>
+           <Link href={"#contact"}> <button className='bg-red-600 h-10 w-20 rounded-2xl '>Hire Me</button></Link>
           </div>
         
         </section>
