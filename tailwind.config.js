@@ -17,16 +17,13 @@ module.exports = {
         slideleft: {
           from: {
             opacity: "0",
-            transform: "translateX(-20px)",
+            transform: "translateX(-100px)",
           },
           to: {
             opacity: "1",
             transform: "translateX(0)",
           },
         },
-      },
-
-      keyframes: {
         slidein: {
           from: {
             opacity: "0",

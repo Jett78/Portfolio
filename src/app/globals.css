@@ -4,7 +4,7 @@
 @tailwind utilities;
 
 
-@keyframes pulse {
+@keyframes disco {
   0% {
       border-color: rgb(2, 255, 171);
   }
@@ -16,7 +16,7 @@
   }
 }
 
-.animate-pulse {
+.animate-disco {
   animation: pulse 2s infinite;
 }
 @keyframes bounce {

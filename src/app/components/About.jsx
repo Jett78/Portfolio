@@ -3,13 +3,13 @@ import Skills from "./Skills";
 
 const About = () => {
   return (
-    <main className="bg-gray-900 md:p-2">
-      <div className="flex flex-wrap items-center justify-center px-2 lg:gap-40 gap-6 sm:my-10 p-2 mx-2 " id="about">
+    <main className="bg-gray-900 md:pt-10 "  id="about">
+      <div className="flex flex-wrap items-center justify-center px-2 lg:gap-40 gap-6 sm:my-10 p-2 mx-2 ">
         <section>
           <img
             src="./avatar.png"
             alt="avatar"
-            className="h-[26rem] rounded-full xl:block hidden border-4 shadow-2xl shadow-purple-500 animate-pulse"
+            className="h-[26rem] rounded-full xl:block hidden p-2 bg-green-700 shadow-2xl shadow-green-500 "
           />
         </section>
 
