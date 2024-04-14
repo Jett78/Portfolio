@@ -9,11 +9,11 @@ import Footer from './components/Footer'
 
 const page = () => {
   return (
-    <div>
+    <div className='font-Poppins'>
       <Navbar/>
       <HeroSection/>
       <About/>
-      <Skills/>
+
       <Projects/>
       <Contact/>
       <Footer/>

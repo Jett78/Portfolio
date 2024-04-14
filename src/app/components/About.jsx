@@ -1,8 +1,9 @@
 import React from "react";
+import Skills from "./Skills";
 
 const About = () => {
   return (
-    <main>
+    <main className="bg-gray-900 md:p-2">
       <div className="flex flex-wrap items-center justify-center px-2 lg:gap-40 gap-6 sm:my-10 p-2 mx-2 " id="about">
         <section>
           <img
@@ -26,7 +27,8 @@ const About = () => {
             pixel aligns with both aesthetic and functional perfection.
           </p>
         </section>
-      </div>
+      </div><hr className="border-gray-500"/>
+      <Skills/>
     </main>
   );
 };

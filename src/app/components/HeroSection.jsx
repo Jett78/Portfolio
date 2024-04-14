@@ -11,11 +11,11 @@ import Link from "next/link";
 const HeroSection = () => {
   return (
     <main >
-      <div className='flex xl:flex-wrap flex-wrap-reverse justify-center  items-center xl:gap-60 sm:gap-8 gap-2 p-4 min-h-[90vh] bg-gray-900'>
+      <div className='flex xl:flex-wrap flex-wrap-reverse justify-center  items-center xl:gap-60 sm:gap-8 gap-2 p-4 min-h-[90vh] bg-gradient-to-tr from-blue-900'>
         <section>
           <h2 className='xl:text-5xl md:text-4xl text-xl font-semibold text-purple-600'>Hello, It's Me</h2>
           <h2 className='xl:text-7xl md:text-5xl text-3xl font-semibold'>Jeet Deula</h2>
-          <h2 className='xl:text-5xl md:text-4xl text-2xl font-semibold'>And I'm <span className='text-red-600 xl:text-6xl md:text-4xl text-2xl font-bold animate-pulse'>Web Developer</span></h2>
+          <h2 className='xl:text-5xl md:text-4xl text-2xl font-semibold'>And I'm <span className='text-red-600 xl:text-6xl md:text-4xl text-2xl font-bold animate-pulse '>Web Developer</span></h2>
           <p className='max-w-[35rem] my-3 text-gray-300'>I'm a frontend developer eager to make a mark in the industry with years of experience throughout my journey</p>
           
           <div className='flex gap-3 text-3xl md:my-2 my-4 cursor-pointer '>
@@ -27,7 +27,7 @@ const HeroSection = () => {
           
           <div className='flex gap-4 justify-center'>
            <a href="./JEETresume.pdf" download> <button className='border-2 border-lime-500 h-10 w-40 rounded-2xl'>Download CV</button></a>
-           <Link href={"#contact"}> <button className='bg-red-600 h-10 w-20 rounded-2xl '>Hire Me</button></Link>
+           <Link href={"#contact"}> <button className='bg-red-600 h-10 w-20 rounded-2xl'>Hire Me</button></Link>
           </div>
         
         </section>
