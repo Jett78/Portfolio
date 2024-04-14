@@ -30,8 +30,8 @@ const projectdata = [
 ];
 const Projects = () => {
   return (
-    <main>
-      <div className="text-center mt-8 grid justify-center" id="projects">
+    <main id="projects">
+      <div className="text-center mt-8 grid justify-center pt-10" >
         <h2 className="text-3xl font-semibold text-gray-300 ">My Projects</h2>
         <p className="text-gray-400 mb-10">List of completed projects</p>
         <div className="flex flex-wrap justify-center gap-20 animate-slidein">

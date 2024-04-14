@@ -11,7 +11,7 @@ import Link from "next/link";
 const HeroSection = () => {
   return (
     <main >
-      <div className='flex xl:flex-wrap flex-wrap-reverse justify-center  items-center xl:gap-60 sm:gap-8 gap-2 p-4 min-h-screen bg-gradient-to-tr from-blue-900'>
+      <div className='flex xl:flex-wrap flex-wrap-reverse justify-center  items-center xl:gap-60 sm:gap-8 gap-2 pt-20 min-h-screen bg-gradient-to-tr from-blue-900'>
         <section className='animate-slideleft'>
           <h2 className='xl:text-5xl md:text-4xl text-xl font-semibold text-purple-500'>Hello, It's Me</h2>
           <h2 className='xl:text-7xl md:text-5xl text-3xl font-semibold'>Jeet Deula</h2>
