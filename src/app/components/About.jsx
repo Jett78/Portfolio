@@ -14,8 +14,8 @@ const About = () => {
         </section>
 
         <section>
-          <h2 className="text-3xl font-semibold text-center  ">About <span className="text-purple-500">me</span> </h2>
-          <p className="max-w-[40rem] text-gray-500 lg:pt-6 pt-4 text-l ">
+          <h2 className="sm:text-3xl text-2xl font-semibold text-center  ">About <span className="text-purple-500">me</span> </h2>
+          <p className="max-w-[40rem] text-gray-500 lg:pt-6 pt-4 md:text-xl text-sm ">
             Hello there! I'm Jeet Deula,a passionate frontend developer from
             kathmandu,Nepal. With a keen eye for creating visually stunning and
             user-friendly websites. My journey in the world of web development

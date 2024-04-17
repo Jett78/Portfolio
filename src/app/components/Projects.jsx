@@ -32,7 +32,7 @@ const Projects = () => {
   return (
     <main id="projects">
       <div className="text-center  grid justify-center md:pt-20 pt-8" >
-        <h2 className="text-3xl font-semibold text-gray-300 ">My Projects</h2>
+        <h2 className="sm:text-3xl text-2xl font-semibold text-gray-300 ">My Projects</h2>
         <p className="text-gray-400 mb-10">List of completed projects</p>
         <div className="flex flex-wrap justify-center gap-20 animate-slidein">
           {projectdata.map((project, index) => (
