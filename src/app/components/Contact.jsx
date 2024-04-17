@@ -12,7 +12,7 @@ const Contact = () => {
       <div className="flex flex-wrap justify-center md:gap-10 p-4 mt-10 bg-gray-900 " id="contact">
         <section className="max-w-[32rem]">
           <h2 className="font-bold text-2xl mb-5">Let's Connect</h2>
-          <p className=" text-gray-400 text-m">
+          <p className=" text-gray-400 sm:text-m text-sm">
             I'm currently looking for new opportunities,my inbox is always
             open.Whether you have any queries or just want to connect just leave
             a message I'll try my best to get back to you
