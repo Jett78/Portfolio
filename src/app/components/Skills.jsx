@@ -14,10 +14,10 @@ const Skills = () => {
     }
 
   return (
-   <main className=' flex flex-wrap justify-center lg:gap-20 rounded-xl mt-2 sm:p-5 p-2 sm:mx-20 mx-2 '>
-    <section className='w-[40rem]'>
-        <h2 className='text-left sm:text-3xl text-2xl font-bold py-4 '>Skills</h2>
-        <div className='flex gap-6'>
+   <main className=' grid lg:grid-cols-2  grid-cols-1 justify-center lg:gap-20 py-8 max-w-[1300px] xl:mx-auto mx-4 '>
+    <section className=' lg:border-r md:pr-10'>
+        <h2 className='text-left sm:text-2xl text-xl font-bold py-4 '>Skills</h2>
+        <div className='flex flex-wrap gap-6'>
             {SKILLS.map((item) => (
                 <SKillCard key={item} 
                 title={item.title} isactive = {selectedSkill.title === item.title}
@@ -28,6 +28,7 @@ const Skills = () => {
             <SkillsInfocard skills={selectedSkill.skills} heading={selectedSkill.title} />
         </div>
     </section>
+    
     <section>
         <Education/>
     </section>

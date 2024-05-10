@@ -31,10 +31,10 @@ const projectdata = [
 const Projects = () => {
   return (
     <main id="projects">
-      <div className="text-center  grid justify-center md:pt-20 pt-8" >
+      <div className=" max-w-[1300px] xl:mx-auto mx-4 text-center  grid justify-center md:py-10 pt-8" >
         <h2 className="sm:text-3xl text-2xl font-semibold text-gray-300 ">My Projects</h2>
-        <p className="text-gray-400 mb-10">List of completed projects</p>
-        <div className="flex flex-wrap justify-center gap-20 animate-slidein">
+        <p className="text-gray-400 mb-10 pb-4 border-b">List of completed projects</p>
+        <div className="grid xl:grid-cols-3 md:grid-cols-2 grid-cols-1 justify-left gap-10 animate-slidein">
           {projectdata.map((project, index) => (
             <Card key={index} project={project} />
           ))}

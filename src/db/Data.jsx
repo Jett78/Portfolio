@@ -9,11 +9,20 @@ export const SKILLS = [
         ],
     },
     {
+        title:"Backend",
+        skills:[
+            {skill : "Nodejs",percentage:"30%"},
+            {skill : "Express",percentage:"20%"},
+            {skill : "Mongodb",percentage:"30%"},
+            {skill : "Postman",percentage:"20%"},
+        ],
+    },
+    {
         title:"Tools",
         skills:[
             {skill : "Git & Github",percentage:"65%"},
             {skill : "Vs Code",percentage:"80%"},
-            {skill : "Responsive Design",percentage:"90%"},
+            {skill : "Responsive Design",percentage:"100%"},
             {skill : "Figma",percentage:"70%"},
         ],
     },
