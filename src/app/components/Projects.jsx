@@ -1,5 +1,8 @@
-import React from "react";
+"use client"
+import React,{useEffect} from "react";
 import Card from "./Card";
+import AOS from "aos";
+import "aos/dist/aos.css";
 
 const projectdata = [
   {
@@ -29,8 +32,11 @@ const projectdata = [
   },
 ];
 const Projects = () => {
+  useEffect(() => {
+    AOS.init();
+  }, []);
   return (
-    <main id="projects">
+    <main id="projects" data-aos="fade-right" data-aos-anchor-placement="top-center">
       <div className=" max-w-[1300px] xl:mx-auto mx-4 text-center  grid justify-center md:py-10 pt-8" >
         <h2 className="sm:text-3xl text-2xl font-semibold text-gray-300 ">My Projects</h2>
         <p className="text-gray-400 mb-10 pb-4 border-b">List of completed projects</p>

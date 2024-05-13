@@ -1,10 +1,18 @@
-import React from "react";
+"use client"
+import React,{useEffect} from "react";
 import Skills from "./Skills";
+import AOS from "aos";
+import "aos/dist/aos.css";
 
 const About = () => {
+
+  useEffect(() => {
+    AOS.init();
+  }, []);
+
   return (
-    <main className="bg-gray-900 md:pt-10  "  id="about">
-      <div className="flex flex-wrap items-center justify-center px-2 lg:gap-40 gap-6 sm:my-8 p-2  max-w-[1300px] xl:mx-auto mx-4 ">
+    <main className="bg-gray-900 md:pt-10  "  id="about" >
+      <div className="flex flex-wrap items-center justify-center px-2 lg:gap-40 gap-6 sm:my-8 p-2  max-w-[1300px] xl:mx-auto mx-4 " data-aos="fade-right" data-aos-anchor-placement="top-center">
         <section >
           <img
             src="./avatar.png"
@@ -27,7 +35,7 @@ const About = () => {
             pixel aligns with both aesthetic and functional perfection.
           </p>
         </section>
-      </div><hr className="border-gray-500"/>
+      </div><hr className="border-gray-500" data-aos="fade-right" data-aos-anchor-placement="top-center"/>
       <Skills/>
     </main>
   );
