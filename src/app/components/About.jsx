@@ -11,7 +11,8 @@ const About = () => {
   }, []);
 
   return (
-    <main className="bg-gray-900 md:pt-10  "  id="about" >
+    <main className="bg-gray-900 md:pt-10"  id="about" >      
+
       <div className="flex flex-wrap items-center justify-center px-2 lg:gap-40 gap-6 sm:my-8 p-2  max-w-[1300px] xl:mx-auto mx-4 " data-aos="fade-right" data-aos-anchor-placement="top-center">
         <section >
           <img
