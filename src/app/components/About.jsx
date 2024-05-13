@@ -35,7 +35,7 @@ const About = () => {
             pixel aligns with both aesthetic and functional perfection.
           </p>
         </section>
-      </div><hr className="border-gray-500" data-aos="fade-right" data-aos-anchor-placement="top-center"/>
+      </div><hr className="border-gray-500"/>
       <Skills/>
     </main>
   );
