@@ -11,8 +11,7 @@ import Link from "next/link";
 const HeroSection = () => {
   return (
     <main >
-          <div className="absolute top-0 z-[-2] h-screen w-full bg-[#464646] bg-[radial-gradient(#ffffff61_1px,#00091d_1px)] bg-[size:30px_30px]"></div>
-
+      <div className="absolute top-0 z-[-2] h-screen w-full bg-[#292929] bg-[radial-gradient(#ffffff1d_1px,#00091d_1px)] bg-[size:30px_30px]"></div>
       <div className='flex xl:flex-wrap flex-wrap-reverse justify-center  items-center xl:gap-60 sm:gap-8 gap-2 pt-20 px-2 py-2 min-h-screen bg-gradient-to-tr from-blue-950'>
         <section className='animate-slideleft'>
           <h2 className='xl:text-5xl md:text-4xl text-xl font-semibold text-purple-500'>Hello, It's Me</h2>

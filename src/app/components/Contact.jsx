@@ -1,21 +1,17 @@
 "use client"
-import React,{useEffect} from "react";
+import React from "react";
 import { FaFacebook } from "react-icons/fa";
 import { FaGithub } from "react-icons/fa6";
 import { FaLinkedin } from "react-icons/fa";
 import { FaInstagram } from "react-icons/fa";
 import Link from "next/link";
-import AOS from "aos";
-import "aos/dist/aos.css";
+
 
 const Contact = () => {
-  useEffect(() => {
-    AOS.init();
-  }, []);
 
   return (
     <main className="bg-gray-900" id="contact">
-      <div className="flex flex-wrap justify-center md:gap-10 p-4 mt-10"  data-aos="fade-right" data-aos-anchor-placement="top-center">
+      <div className="flex flex-wrap justify-center md:gap-10 p-4 ">
         <section className="max-w-[32rem]">
           <h2 className="font-bold sm:text-3xl text-2xl mb-5">Let's Connect</h2>
           <p className=" text-gray-400 sm:text-m text-sm">
