@@ -30,6 +30,12 @@ const projectdata = [
     gitUrl: "https://github.com/Jett78/Recipe_App",
     preview: "https://recipehubs.netlify.app/",
   },
+  {
+    name: "Portfolio",
+    img: "./portfolio.png",
+    gitUrl: "https://github.com/Jett78/Portfolio",
+    preview: "https://portfolio-sable-pi-66.vercel.app/",
+  },
 ];
 const Projects = () => {
 
