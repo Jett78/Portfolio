@@ -17,7 +17,7 @@ const About = () => {
           <img
             src="./avatar.png"
             alt="avatar"
-            className="h-[26rem] rounded-full xl:block hidden p-2 bg-green-700 shadow-2xl shadow-green-500 "
+            className="h-[26rem] rounded-full xl:block hidden p-2 bg-red-200  "
           />
         </section>
 
