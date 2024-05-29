@@ -30,7 +30,7 @@ const Contact = () => {
         <section className="grid w-[40rem] p-2">
             <form action="https://formspree.io/f/xyyrbvyv" method="post">
                 <label htmlFor="email">Your Email</label><br />
-                <input type="email" name="email" placeholder="ram@gmail.com" className="bg-black border border-gray-500 p-3 mb-5 w-full rounded-xl" required/><br />
+                <input type="email" name="email" placeholder="@gmail.com" className="bg-black border border-gray-500 p-3 mb-5 w-full rounded-xl" required/><br />
                 <label htmlFor="message">Message</label><br />
                 <textarea name="message" id="" cols="20" rows="8" placeholder="Let's talk about" className="bg-black border border-gray-500 p-4 mb-5 w-full rounded-xl" required></textarea><br />
                 <button type="submit" className="bg-purple-600 w-full py-2 rounded-lg font-semibold">Send Message</button>
