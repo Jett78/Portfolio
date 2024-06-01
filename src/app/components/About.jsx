@@ -15,6 +15,16 @@ const About = () => {
       opacity:1,
     }
   }
+  const TextAnimation = {
+    initial:{
+      x:60,
+      opacity:0,
+    },
+    animate:{
+      x:0,
+      opacity:1,
+    }
+  }
 
   return (
     <main className="bg-gray-900 md:pt-10"  id="about" >      
@@ -33,7 +43,13 @@ const About = () => {
           />
         </motion.section>
 
-        <section>
+        <motion.section
+         variants={TextAnimation}
+         initial="initial"
+         whileInView="animate"
+         viewport={{once:true,amount:1}}
+         transition={{ease:"easeInOut",duration:1}}
+        >
           <h2 className="sm:text-3xl text-2xl font-semibold text-center  ">About <span className="text-purple-500">me</span> </h2>
           <p className="max-w-[40rem] text-gray-500 lg:pt-6 py-4 md:text-l text-m ">
             Hello there! I'm Jeet Deula,a passionate frontend developer from
@@ -46,7 +62,7 @@ const About = () => {
             of translating creative visions into reality, ensuring that every
             pixel aligns with both aesthetic and functional perfection.
           </p>
-        </section>
+        </motion.section>
       </div><hr className="border-gray-500"/>
       <Skills/>
     </main>
