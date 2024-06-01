@@ -1,20 +1,37 @@
 "use client"
 import React,{useEffect} from "react";
 import Skills from "./Skills";
+import { motion } from "framer-motion";
 
 
 const About = () => {
+  const ImgAnimation = {
+    initial:{
+      scale:0,
+      opacity:0,
+    },
+    animate:{
+      scale:1,
+      opacity:1,
+    }
+  }
 
   return (
     <main className="bg-gray-900 md:pt-10"  id="about" >      
       <div className="flex flex-wrap items-center justify-center px-2 lg:gap-40 gap-6 sm:my-8 p-2  max-w-[1300px] xl:mx-auto mx-4">
-        <section >
+        <motion.section 
+        variants={ImgAnimation}
+        initial="initial"
+        whileInView="animate"
+        viewport={{once:true,amount:1}}
+        transition={{ease:"easeInOut",duration:1}}
+        >
           <img
             src="./avatar.png"
             alt="avatar"
             className="h-[26rem] rounded-full xl:block hidden p-2 bg-red-200  "
           />
-        </section>
+        </motion.section>
 
         <section>
           <h2 className="sm:text-3xl text-2xl font-semibold text-center  ">About <span className="text-purple-500">me</span> </h2>

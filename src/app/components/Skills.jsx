@@ -30,7 +30,10 @@ const Skills = () => {
   return (
    <main className=' grid lg:grid-cols-2  grid-cols-1 justify-center lg:gap-20 py-8 max-w-[1300px] xl:mx-auto mx-4 ' >
     <section className=' lg:border-r md:pr-10'>
-        <h2 className='text-left sm:text-2xl text-xl font-bold py-4 '>Skills</h2>
+        <motion.h2 
+        initial={{opacity:0}}
+        whileInView={{opacity:1}}
+        className='text-left sm:text-2xl text-xl font-bold py-4 '>Skills</motion.h2>
         <div className='flex flex-wrap gap-6'>
             {SKILLS.map((item,index) => (
                 <motion.div
