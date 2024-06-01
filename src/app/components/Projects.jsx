@@ -66,7 +66,7 @@ const Projects = () => {
             custom={index}
             initial="initial"
             whileInView="animate"
-            viewport={{once:true,amount:1}}
+            viewport={{once:true,amount:0.5}}
             >
                <Card  project={project} />
             </motion.div>
