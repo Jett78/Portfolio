@@ -44,7 +44,7 @@ const Contact = () => {
         variants={FormAnimation}
         initial="initial"
         whileInView="animate"
-        viewport={{once:true,amount:1}}
+        viewport={{once:true,amount:0.2}}
         transition={{ease:"easeInOut",duration:0.5}}
         className="grid w-[40rem] p-2">
             <form action="https://formspree.io/f/xyyrbvyv" method="post">

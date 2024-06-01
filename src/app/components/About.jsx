@@ -1,40 +1,39 @@
-"use client"
-import React,{useEffect} from "react";
+"use client";
+import React, { useEffect } from "react";
 import Skills from "./Skills";
 import { motion } from "framer-motion";
 
-
 const About = () => {
   const ImgAnimation = {
-    initial:{
-      scale:0.5,
-      opacity:0,
+    initial: {
+      scale: 0.5,
+      opacity: 0,
     },
-    animate:{
-      scale:1,
-      opacity:1,
-    }
-  }
+    animate: {
+      scale: 1,
+      opacity: 1,
+    },
+  };
   const TextAnimation = {
-    initial:{
-      x:20,
-      opacity:0,
+    initial: {
+      x: 20,
+      opacity: 0,
     },
-    animate:{
-      x:0,
-      opacity:1,
-    }
-  }
+    animate: {
+      x: 0,
+      opacity: 1,
+    },
+  };
 
   return (
-    <main className="bg-gray-900 md:pt-10"  id="about" >      
+    <main className="bg-gray-900 md:pt-10" id="about">
       <div className="flex flex-wrap items-center justify-center px-2 lg:gap-40 gap-6 sm:my-8 p-2  max-w-[1300px] xl:mx-auto mx-4">
-        <motion.section 
-        variants={ImgAnimation}
-        initial="initial"
-        whileInView="animate"
-        viewport={{once:true,amount:1}}
-        transition={{ease:"easeInOut",duration:0.3}}
+        <motion.section
+          variants={ImgAnimation}
+          initial="initial"
+          whileInView="animate"
+          viewport={{ once: true, amount: 1 }}
+          transition={{ ease: "easeInOut", duration: 0.3 }}
         >
           <img
             src="./avatar.png"
@@ -44,13 +43,15 @@ const About = () => {
         </motion.section>
 
         <motion.section
-         variants={TextAnimation}
-         initial="initial"
-         whileInView="animate"
-         viewport={{once:true,amount:1}}
-         transition={{ease:"easeInOut",duration:0.3}}
+          variants={TextAnimation}
+          initial="initial"
+          whileInView="animate"
+          viewport={{ once: true, amount: 1 }}
+          transition={{ ease: "easeInOut", duration: 0.3 }}
         >
-          <h2 className="sm:text-3xl text-2xl font-semibold text-center  ">About <span className="text-purple-500">me</span> </h2>
+          <h2 className="sm:text-3xl text-2xl font-semibold text-center  ">
+            About <span className="text-purple-500">me</span>{" "}
+          </h2>
           <p className="max-w-[40rem] text-gray-500 lg:pt-6 py-4 md:text-l text-m ">
             Hello there! I'm Jeet Deula,a passionate frontend developer from
             kathmandu,Nepal. With a keen eye for creating visually stunning and
@@ -63,8 +64,9 @@ const About = () => {
             pixel aligns with both aesthetic and functional perfection.
           </p>
         </motion.section>
-      </div><hr className="border-gray-500"/>
-      <Skills/>
+      </div>
+      <hr className="border-gray-500" />
+      <Skills />
     </main>
   );
 };
