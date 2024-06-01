@@ -25,6 +25,9 @@ const Contact = () => {
     <main className="bg-gray-900" id="contact">
       <div className="flex flex-wrap justify-center md:gap-10 p-4 ">
         <motion.section 
+        initial={{opacity:0}}
+        whileInView={{opacity:1}}
+        transition={{ease:"easeInOut",duration:2}}
         className="max-w-[32rem]">
           <h2 className="font-bold sm:text-3xl text-2xl mb-5">Let's Connect</h2>
           <p className=" text-gray-400 sm:text-m text-sm">
