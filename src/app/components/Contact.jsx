@@ -5,14 +5,41 @@ import { FaGithub } from "react-icons/fa6";
 import { FaLinkedin } from "react-icons/fa";
 import { FaInstagram } from "react-icons/fa";
 import Link from "next/link";
-
+import { motion } from "framer-motion";
 
 const Contact = () => {
+  const ConnectAnimation = {
+    initial:{
+      x:-60,
+      opacity:0,
+    },
+    animate:{
+      x:0,
+      opacity:1,
+    }
+  }
+  const FormAnimation = {
+    initial:{
+      x:60,
+      opacity:0,
+    },
+    animate:{
+      x:0,
+      opacity:1,
+    }
+  }
+
 
   return (
     <main className="bg-gray-900" id="contact">
       <div className="flex flex-wrap justify-center md:gap-10 p-4 ">
-        <section className="max-w-[32rem]">
+        <motion.section 
+        variants={ConnectAnimation}
+        initial="initial"
+        whileInView="animate"
+        viewport={{once:true,amount:1}}
+        transition={{ease:"easeInOut",duration:0.5}}
+        className="max-w-[32rem]">
           <h2 className="font-bold sm:text-3xl text-2xl mb-5">Let's Connect</h2>
           <p className=" text-gray-400 sm:text-m text-sm">
             I'm currently looking for new opportunities,my inbox is always
@@ -25,9 +52,15 @@ const Contact = () => {
             <Link href={"https://github.com/Jett78"}><FaGithub className='hover:text-4xl ease-in duration-300'/></Link>
             <Link href={"https://www.linkedin.com/in/jeet-deula-32642624a/"}> <FaLinkedin className='text-blue-500 bg-white rounded-full p-0.5 hover:text-4xl ease-in-out duration-300'/></Link>
           </div>
-        </section>
+        </motion.section>
 
-        <section className="grid w-[40rem] p-2">
+        <motion.section 
+        variants={FormAnimation}
+        initial="initial"
+        whileInView="animate"
+        viewport={{once:true,amount:1}}
+        transition={{ease:"easeInOut",duration:0.5}}
+        className="grid w-[40rem] p-2">
             <form action="https://formspree.io/f/xyyrbvyv" method="post">
                 <label htmlFor="email">Your Email</label><br />
                 <input type="email" name="email" placeholder="@gmail.com" className="bg-black border border-gray-500 p-3 mb-5 w-full rounded-xl" required/><br />
@@ -35,7 +68,7 @@ const Contact = () => {
                 <textarea name="message" id="" cols="20" rows="8" placeholder="Let's talk about" className="bg-black border border-gray-500 p-4 mb-5 w-full rounded-xl" required></textarea><br />
                 <button type="submit" className="bg-purple-600 w-full py-2 rounded-lg font-semibold">Send Message</button>
             </form>
-        </section>
+        </motion.section>
       </div>
     </main>
   );
