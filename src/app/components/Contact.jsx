@@ -8,16 +8,7 @@ import Link from "next/link";
 import { motion } from "framer-motion";
 
 const Contact = () => {
-  const ConnectAnimation = {
-    initial:{
-      x:-40,
-      opacity:0,
-    },
-    animate:{
-      x:0,
-      opacity:1,
-    }
-  }
+  
   const FormAnimation = {
     initial:{
       x:60,
@@ -34,11 +25,6 @@ const Contact = () => {
     <main className="bg-gray-900" id="contact">
       <div className="flex flex-wrap justify-center md:gap-10 p-4 ">
         <motion.section 
-        variants={ConnectAnimation}
-        initial="initial"
-        whileInView="animate"
-        viewport={{once:true,amount:1}}
-        transition={{ease:"easeInOut",duration:0.5}}
         className="max-w-[32rem]">
           <h2 className="font-bold sm:text-3xl text-2xl mb-5">Let's Connect</h2>
           <p className=" text-gray-400 sm:text-m text-sm">
