@@ -34,7 +34,7 @@ const About = () => {
         initial="initial"
         whileInView="animate"
         viewport={{once:true,amount:1}}
-        transition={{ease:"easeInOut",duration:0.5}}
+        transition={{ease:"easeInOut",duration:0.3}}
         >
           <img
             src="./avatar.png"
@@ -48,7 +48,7 @@ const About = () => {
          initial="initial"
          whileInView="animate"
          viewport={{once:true,amount:1}}
-         transition={{ease:"easeInOut",duration:0.5}}
+         transition={{ease:"easeInOut",duration:0.3}}
         >
           <h2 className="sm:text-3xl text-2xl font-semibold text-center  ">About <span className="text-purple-500">me</span> </h2>
           <p className="max-w-[40rem] text-gray-500 lg:pt-6 py-4 md:text-l text-m ">

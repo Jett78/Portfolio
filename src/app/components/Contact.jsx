@@ -10,7 +10,7 @@ import { motion } from "framer-motion";
 const Contact = () => {
   const ConnectAnimation = {
     initial:{
-      x:-60,
+      x:-40,
       opacity:0,
     },
     animate:{
