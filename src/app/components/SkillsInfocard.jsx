@@ -30,7 +30,7 @@ const SkillsInfocard = ({heading,skills}) => {
     variants={ContainerAnimation}
     initial="initial"
     whileInView="animate"
-    viewport={{once:true,amount:0.2}}
+    viewport={{once:true,amount:1}}
     className="mt-5 border bg-gradient-to-l  from-purple-900 rounded-xl max-w-[40em]">
         <h2 className='text-2xl font-semibold text-center py-2'>{heading}</h2> <hr />
         <div className='py-6 px-4'>

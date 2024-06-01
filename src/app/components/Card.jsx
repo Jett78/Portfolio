@@ -1,5 +1,4 @@
 import React from "react";
-import { FaCode } from "react-icons/fa6";
 import { FaEye } from "react-icons/fa";
 import { FaGithub } from "react-icons/fa";
 import Link from "next/link";
