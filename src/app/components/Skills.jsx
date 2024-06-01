@@ -4,10 +4,23 @@ import SKillCard from "./SkillCard"
 import SkillsInfocard from "./SkillsInfocard"
 import {SKILLS} from "../../db/Data"
 import Education from "./Education"
+import { motion } from 'framer-motion';
 
 
 const Skills = () => {
- 
+    const SkillsTitleAnimation = {
+        initial:{
+          y:10,
+          opacity:0,
+        },
+        animate:(index)=>({
+          y:0,
+          opacity:1,
+          transition:{
+            delay:0.8*index
+          }
+        })
+      }
 
     const [selectedSkill,setselectedSkill] = useState(SKILLS[0]);
     const handleSelectedSkill = (data) => {
@@ -19,10 +32,19 @@ const Skills = () => {
     <section className=' lg:border-r md:pr-10'>
         <h2 className='text-left sm:text-2xl text-xl font-bold py-4 '>Skills</h2>
         <div className='flex flex-wrap gap-6'>
-            {SKILLS.map((item) => (
-                <SKillCard key={item} 
+            {SKILLS.map((item,index) => (
+                <motion.div
+                key={item} 
+                variants={SkillsTitleAnimation}
+            custom={index}
+            initial="initial"
+            whileInView="animate"
+            viewport={{once:true,amount:0.2}}
+                >
+                    <SKillCard
                 title={item.title} isactive = {selectedSkill.title === item.title}
                 onClick={() => {handleSelectedSkill(item)}}/>
+                </motion.div>
             ))}
         </div>
         <div>
