@@ -17,7 +17,7 @@ const About = () => {
   }
   const TextAnimation = {
     initial:{
-      x:60,
+      x:20,
       opacity:0,
     },
     animate:{
