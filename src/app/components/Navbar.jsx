@@ -6,7 +6,7 @@ import { FaHome } from "react-icons/fa";
 import { IoPersonSharp } from "react-icons/io5";
 import { VscProject } from "react-icons/vsc";
 import { IoCall } from "react-icons/io5";
-
+import { motion } from "framer-motion";
 
 
 
@@ -38,6 +38,19 @@ const navdata = [
 
 const Navbar = () => {
 
+  const NavAnimate = {
+    initial:{x:60,
+      opacity:0,
+    },
+    animate:(index)=>({
+      x:0,
+      opacity:1,
+      transition:{
+        delay:0.5 * index,
+      }
+    })
+  }
+
   const[isOpen,setIsOpen] = useState(false);
   return (
     <main>
@@ -56,14 +69,25 @@ const Navbar = () => {
 
        {/* mobile view */}
        <div>
-       <ul className={`fixed top-14 grid gap-8 justify-center text-center py-4 font-semibold bg-black w-full z-10 sm:hidden ${isOpen ? "block" : "hidden"}`} >
+       <ul className={`fixed top-16 grid gap-8 justify-center text-center py-4 font-semibold bg-black w-full z-10 sm:hidden transform transition-transform duration-500 ease-in-out ${
+          isOpen ? 'translate-x-0' : 'translate-x-full'
+        }`} >
          {navdata.map((navdata,index) => (
-            <Link key={index} href={navdata.path} className="hover:text-red-500">
+           <motion.div
+           variants={NavAnimate}
+           custom={index}
+          initial="initial"
+          whileInView="animate" 
+          viewport={{once:true,amount:1}}
+          transition={{ease:"easeInOut",duration:1}}
+          >
+             <Link key={index} href={navdata.path} className="hover:text-red-500">
               <div className="flex items-center gap-4 ">
               {navdata.icon}
               {navdata.name}
               </div>
               </Link>
+           </motion.div>
           ))}
           </ul>
        </div>
