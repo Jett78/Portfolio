@@ -10,7 +10,8 @@ const About = () => {
       opacity: 0,
     },
     animate: {
-      scale: 1,
+      scale: [0,1,1.3,1],
+      rotate:[180,0,360],
       opacity: 1,
     },
   };
@@ -27,13 +28,13 @@ const About = () => {
 
   return (
     <main className="bg-gray-900 md:pt-10" id="about">
-      <div className="flex flex-wrap items-center justify-center px-2 lg:gap-40 gap-6 sm:my-8 p-2  max-w-[1300px] xl:mx-auto mx-4">
+      <div data-scroll data-scroll-section data-scroll-speed="-.10" className="flex flex-wrap items-center justify-center px-2 lg:gap-40 gap-6 sm:my-8 p-2  max-w-[1300px] xl:mx-auto mx-4">
         <motion.section
           variants={ImgAnimation}
           initial="initial"
           whileInView="animate"
           viewport={{ once: true, amount: 1 }}
-          transition={{ ease: "easeInOut", duration: 0.3 }}
+          transition={{ ease: "easeInOut", duration: 2 }}
         >
           <img
             src="./avatar.png"
