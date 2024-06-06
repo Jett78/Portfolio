@@ -2,7 +2,6 @@ import React from "react";
 import { FaEye } from "react-icons/fa";
 import { FaGithub } from "react-icons/fa";
 import Link from "next/link";
-import Image from "next/image";
 
 const Card = ({ project }) => {
   const { name, img, gitUrl, preview } = project;
@@ -11,7 +10,7 @@ const Card = ({ project }) => {
       <section className=" bg-neutral-900 rounded-lg grid justify-center text-left max-w-[60rem] p-2   ">
         <div>
           <Link href={preview}>
-            <Image src={img} alt="card" className="w-80 h-[15rem] rounded-lg hover:brightness-50  ease-in-out duration-300 cursor-pointer " /></Link>
+            <img src={img} alt="card" className="w-80 h-[15rem] rounded-lg hover:brightness-50  ease-in-out duration-300 cursor-pointer " /></Link>
         </div>
 
         <div className="py-1 px-4">

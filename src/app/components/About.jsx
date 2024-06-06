@@ -2,7 +2,6 @@
 import React, { useEffect } from "react";
 import Skills from "./Skills";
 import { motion } from "framer-motion";
-import Image from "next/image";
 
 const About = () => {
   const ImgAnimation = {
@@ -37,7 +36,7 @@ const About = () => {
           viewport={{ once: true, amount: 1 }}
           transition={{ ease: "easeInOut", duration: 2 }}
         >
-          <Image
+          <img
             src="./avatar.png"
             alt="avatar"
             className="h-[26rem] rounded-full xl:block hidden p-2 bg-red-200  "

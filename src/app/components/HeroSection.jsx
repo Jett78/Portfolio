@@ -5,8 +5,6 @@ import { FaGithub } from "react-icons/fa6";
 import { FaLinkedin } from "react-icons/fa";
 import { FaInstagram } from "react-icons/fa";
 import { motion } from 'framer-motion';
-import Link from "next/link";
-import Image from 'next/image';
 
 
 
@@ -43,7 +41,7 @@ const HeroSection = () => {
         animate={{scale:1,opacity:1,x:0}}
         transition={{ease:"easeInOut",duration:1}}
         className=' shadow-2xl shadow-purple-500  bg-purple-500 p-1 rounded-full animated-element '>
-          <Image src="./pp.png" alt="avatar" className='sm:max-w-[22rem] max-w-[15rem] rounded-full ' />
+          <img src="./pp.png" alt="avatar" className='sm:max-w-[22rem] max-w-[15rem] rounded-full ' />
         </motion.section>
      
      </div>
