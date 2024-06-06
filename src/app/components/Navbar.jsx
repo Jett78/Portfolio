@@ -39,14 +39,14 @@ const navdata = [
 const Navbar = () => {
 
   const NavAnimate = {
-    initial:{x:60,
+    initial:{y:-60,
       opacity:0,
     },
     animate:(index)=>({
-      x:0,
+      y:0,
       opacity:1,
       transition:{
-        delay:0.5 * index,
+        delay:0.3 * index,
       }
     })
   }
@@ -70,7 +70,7 @@ const Navbar = () => {
        {/* mobile view */}
        <div>
        <ul className={`fixed top-16 grid gap-8 justify-center text-center py-4 font-semibold bg-black w-full z-10 sm:hidden transform transition-transform duration-500 ease-in-out ${
-          isOpen ? 'translate-x-0' : 'translate-x-full'
+          isOpen ? 'translate-y-0' : '-translate-y-[150%]'
         }`} >
          {navdata.map((navdata,index) => (
            <motion.div
