@@ -6,10 +6,10 @@ import About from './components/About'
 import Contact from './components/Contact'
 import Projects from './components/Projects'
 import Footer from './components/Footer'
-// import LocomotiveScroll from "locomotive-scroll"
+import LocomotiveScroll from "locomotive-scroll"
 
 const page = () => {
-  // const locomotiveScroll = new LocomotiveScroll();   //for smooth scrolling
+  const locomotiveScroll = new LocomotiveScroll();   //for smooth scrolling
   return (
     <div>
       <Navbar/>
