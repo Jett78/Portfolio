@@ -4,6 +4,7 @@ import { FaFacebook } from "react-icons/fa";
 import { FaGithub } from "react-icons/fa6";
 import { FaLinkedin } from "react-icons/fa";
 import { FaInstagram } from "react-icons/fa";
+import { motion } from 'framer-motion';
 import Link from "next/link";
 
 
@@ -13,7 +14,11 @@ const HeroSection = () => {
     <main >
       <div className="absolute top-0 z-[-2] h-screen w-full bg-[#292929] bg-[radial-gradient(#ffffff1d_1px,#00091d_1px)] bg-[size:30px_30px]"></div>
       <div className='flex xl:flex-wrap flex-wrap-reverse justify-center  items-center xl:gap-60 sm:gap-8 gap-2 pt-20 px-2 py-2 min-h-screen bg-gradient-to-tr from-blue-950'>
-        <section className='animate-slideleft'>
+        <motion.section 
+        initial={{x:-20,opacity:0}}
+        animate={{x:0,opacity:1}}
+        transition={{duration:1}}
+       >
           <h2 className='xl:text-5xl md:text-4xl text-xl font-semibold text-purple-500'>Hello, It's Me</h2>
           <h2 className='xl:text-7xl md:text-5xl text-3xl font-semibold'>Jeet Deula</h2>
           <h2 className='xl:text-5xl md:text-4xl text-2xl font-semibold'>And I'm <span className='text-red-600 xl:text-6xl md:text-4xl text-2xl font-bold animate-pulse'>Web Developer</span></h2>
@@ -31,10 +36,14 @@ const HeroSection = () => {
            <Link href={"#contact"}> <button className='bg-red-600 h-10 w-20 rounded-2xl'>Hire Me</button></Link>
           </div>
         
-        </section>
-        <section className=' shadow-2xl shadow-purple-500  bg-purple-500 p-1 rounded-full animated-element '>
+        </motion.section>
+        <motion.section
+        initial={{scale:0,opacity:0,x:200}}
+        animate={{scale:1,opacity:1,x:0}}
+        transition={{ease:"easeInOut",duration:1}}
+        className=' shadow-2xl shadow-purple-500  bg-purple-500 p-1 rounded-full animated-element '>
           <img src="./pp.png" alt="avatar" className='sm:max-w-[22rem] max-w-[15rem] rounded-full ' />
-        </section>
+        </motion.section>
      
      </div>
     </main>
