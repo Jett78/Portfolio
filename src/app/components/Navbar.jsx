@@ -55,11 +55,23 @@ const Navbar = () => {
   return (
     <main>
       <div className="border-b-2 flex justify-between items-center px-10 py-4 fixed bg-black w-full z-10 ">
-        <h2 className="text-2xl sm:text-3xl font-bold">Portfolio</h2>
+        <motion.h2 
+        initial={{y:-20,opacity:0}}
+        animate={{y:0,opacity:1}}
+        transition={{duration:1}}
+        className="text-2xl sm:text-3xl font-bold">Portfolio</motion.h2>
         <nav className="list-none font-semibold text-gray-200">
           <ul className="sm:flex hidden items-center gap-10 ">
          {navdata.map((navdata,index) => (
-            <Link key={index} href={navdata.path} className="hover:text-red-500 duration-300">{navdata.name}</Link>
+            <motion.div
+            key={index}
+            initial={{y:-20,opacity:0}}
+            animate={{y:0,opacity:1}}
+            transition={{duration:1,delay:0.3*index}}
+           
+            >
+              <Link  href={navdata.path} className="hover:text-red-500 duration-300">{navdata.name}</Link>
+            </motion.div>
           ))}
           </ul>
           <GiHamburgerMenu className="sm:hidden block"  onClick={() => setIsOpen(!isOpen)} />
