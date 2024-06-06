@@ -5,6 +5,7 @@ import { FaGithub } from "react-icons/fa6";
 import { FaLinkedin } from "react-icons/fa";
 import { FaInstagram } from "react-icons/fa";
 import { motion } from 'framer-motion';
+import Link from "next/link";
 
 
 
