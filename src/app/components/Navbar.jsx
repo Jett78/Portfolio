@@ -74,6 +74,7 @@ const Navbar = () => {
         }`} >
          {navdata.map((navdata,index) => (
            <motion.div
+           key={index}
            variants={NavAnimate}
            custom={index}
           initial="initial"
@@ -81,7 +82,7 @@ const Navbar = () => {
           viewport={{once:true,amount:1}}
           transition={{ease:"easeInOut",duration:1}}
           >
-             <Link key={index} href={navdata.path} className="hover:text-red-500">
+             <Link  href={navdata.path} className="hover:text-red-500">
               <div className="flex items-center gap-4 ">
               {navdata.icon}
               {navdata.name}
