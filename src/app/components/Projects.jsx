@@ -70,6 +70,7 @@ const Projects = () => {
               initial="initial"
               whileInView="animate"
               viewport={{ once: true, amount: 0.3 }}
+              transition={{ease:"easeInOut",duration:0.5}}
             >
               <Card project={project} />
             </motion.div>
