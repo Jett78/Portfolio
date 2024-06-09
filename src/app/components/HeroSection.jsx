@@ -48,9 +48,9 @@ const HeroSection = () => {
         
         </motion.section>
         <motion.section
-        initial={{scale:0,opacity:0,x:200}}
-        animate={{scale:1,opacity:1,x:0}}
-        transition={{ease:"easeInOut",duration:1}}
+        initial={{opacity:0}}
+        animate={{opacity:1}}
+        transition={{ease:"easeInOut",duration:2}}
         className=' shadow-2xl shadow-purple-500  bg-purple-500 p-1 rounded-full animated-element '>
           <img src="./pp.png" alt="avatar" className='sm:max-w-[22rem] max-w-[15rem] rounded-full ' />
         </motion.section>
