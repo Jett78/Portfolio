@@ -24,7 +24,7 @@ const HeroSection = () => {
           <h2 className='xl:text-5xl md:text-4xl text-2xl font-semibold'>And I'm <span className='text-red-600 xl:text-6xl md:text-4xl text-2xl font-bold animate-pulse'>Web Developer</span></h2>
           <p className='max-w-[35rem] my-3 text-gray-300'>I'm a frontend developer eager to make a mark in the industry with years of experience throughout my journey</p>
           
-          <div className='flex gap-2 text-3xl md:my-2 my-4 cursor-pointer'>
+          <div className='flex gap-3 text-3xl md:my-2 my-4 cursor-pointer'>
             <Link href ={"https://www.facebook.com/profile.php?id=100005027238835"} ><FaFacebook className=' text-blue-500 hover:text-4xl ease-in duration-300'/></Link>
             <Link href={"https://www.instagram.com/_jettt__/"}><FaInstagram className='text-red-400 hover:text-4xl ease-in duration-300'/></Link>
             <Link href={"https://github.com/Jett78"}><FaGithub className='hover:text-4xl ease-in duration-300'/></Link>
