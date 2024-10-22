@@ -11,23 +11,29 @@ const projectdata = [
     preview: "#",
   },
   {
-    name: "Music School Webpage",
-    img: "./music.png",
+    name: "Opus Manpower",
+    img: "./opus.png",
     gitUrl: "https://github.com/Jett78/musicnextjs",
-    preview: "https://musicnextjs-eight.vercel.app/",
+    preview: "https://opus-service-manpower.vercel.app/",
   },
 
   {
-    name: "Ecommerce",
-    img: "./ecom.png",
+    name: "Nice Manpower",
+    img: "./nice.png",
     gitUrl: "https://github.com/Jett78/Ecommerce",
-    preview: "https://ecommerce-liard-nu-20.vercel.app/",
+    preview: "https://nicerecruitment.org/",
   },
   {
-    name: "Recipe Search Hub",
-    img: "./recipe.png",
+    name: "Expert Business",
+    img: "./expert.png",
     gitUrl: "https://github.com/Jett78/Recipe_App",
-    preview: "https://recipehubs.netlify.app/",
+    preview: "https://new-expertbusiness.vercel.app/",
+  },
+  {
+    name: "Infinity Travel",
+    img: "./infinity.png",
+    gitUrl: "https://github.com/Jett78/Recipe_App",
+    preview: "https://infinity-v1-psi.vercel.app/",
   },
   {
     name: "Portfolio",
